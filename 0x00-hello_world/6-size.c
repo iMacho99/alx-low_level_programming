@@ -3,19 +3,15 @@
 /**
  * main - function
  *
- * Return: 0
+ * Return: 0 (Sucess)
  */
 
 int main(void)
 {
-	printf("Size of int is %u byte(s)\n", (unsigned)sizeof(int));
-	printf("Size of short is %u byte(s)\n", (unsigned)sizeof(short));
-	printf("Size of long is %lu byte(s)\n", (unsigned long)sizeof(long));
-	printf("Size of long long is %lu byte(s)\n", (unsigned long)sizeof(long long));
-	printf("Size of float is %u byte(s)\n", (unsigned)sizeof(float));
-	printf("Size of double is %lu byte(s)\n", (unsigned long)sizeof(double));
-	printf("Size of long double is %lu bytes(s)\n", (unsigned long)sizeof(long double));
-	printf("Size of char is %lu byte(s)\n", (unsigned)sizeof(char));
-	printf("Size of void pointer is %lu byte(s)\n", (unsigned long)sizeof(void *));
+	printf("Size of a char is %lu byte(s)\n", sizeof(char));
+	printf("Size of an int is %lu byte(s)\n", sizeof(int));
+	printf("Size of a long int is %lu byte(s)\n", sizeof(long int));
+	printf("Size of a long long int is %lu byte(s)\n", sizeof(long long int));
+	printf("Size of a float is %lu byte(s)\n", sizeof(float));
 	return (0);
 }
