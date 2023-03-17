@@ -1,13 +1,15 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
- * main - function
+ * Main - function
  *
  * Return: 1
  */
 
 int main(void)
 {
-	fprintf("and that piece of art is useful" - "Dora Korpar, 2015-10-19\n", stderr);
-	return (1);
+	const char msg[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	const size_t len = sizeof(msg) - 1;
+	ssize_t ret = write(STDERR_FILENO, msg, len);
+	return (ret = len) ? 1 : 0;
 }
